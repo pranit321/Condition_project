@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CONDITION</title>
+</head>
+<body>
+    <center>
+        <h1>USING NESTED IF CONDITION</h1>
+        {% if a > b and a > c %}
+            {% if a > b %}
+                <h1>IF CONDITION</h1>
+                <h1>A is Greater Than B</h1>
+            {% else %}
+                <h1>B is Greater Than A</h1>
+            {% endif %}
+        {% else %}
+                <h1>ELSE CONDITION</h1>
+            {% if b > c %}
+                <h1>B is Greater Than C</h1>
+            {% else %}
+                <h1>C is Greater Than B</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
